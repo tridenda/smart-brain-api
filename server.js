@@ -31,6 +31,7 @@ app.post("/signin", (req, res) => signin.handleSignin(req, res, db, bcrypt));
 app.post("/signup", (req, res) => signup.handleSignup(req, res, db, bcrypt));
 app.get("/profile/:id", (req, res) => profile.handleGetProfile(req, res, db));
 app.put("/image", (req, res) => image.handleImage(req, res, db));
+app.post("/imageurl", (req, res) => image.handleApiCall(req, res));
 
 app.listen(8000, () => {
   console.log("App is running on port 8000");
