@@ -4,7 +4,7 @@
   "description": "API for smart brain face recognition",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "start:dev": "nodemon server.js"
   },
   "repository": {
